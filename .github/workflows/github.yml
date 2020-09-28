@@ -1,8 +1,6 @@
 
 name: Github Docker Image CI
-on: 
-  watch:
-    types: [started]
+on: push
 jobs:
   build:
     runs-on: ubuntu-latest
