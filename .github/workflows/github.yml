@@ -12,5 +12,5 @@ jobs:
         username: ${{secrets.DOCKER_USERNAME}}
         password: ${{secrets.DOCKER_TOKEN}}
     - run: | 
-        docker build -t docker.pkg.github.com/james-martinez/chrome-web/chrome-web:latest .
-        docker push docker.pkg.github.com/james-martinez/chrome-web/chrome-web:latest
+        docker build -t docker.pkg.github.com/${{secrets.DOCKER_USERNAME}}/chrome-web/chrome-web:latest .
+        docker push docker.pkg.github.com/${{secrets.DOCKER_USERNAME}}/chrome-web/chrome-web:latest
