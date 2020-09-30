@@ -4,8 +4,7 @@ on: push
 jobs:
   build:
     runs-on: ubuntu-latest
-    if: "!contains(github.event.head_commit.message, 'ci-skip')"
-    if: "!contains(github.event.head_commit.message, 'skip-ci')"
+    if: "!contains(github.event.head_commit.message, 'ci-skip', 'skip-ci')"
     steps:
     - uses: actions/checkout@v1
     - uses: azure/docker-login@v1
