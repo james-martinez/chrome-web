@@ -11,4 +11,5 @@ Refer to the solution given in the following article to run Google Chrome on Doc
 Refer to steps given in install.txt file if you want to build your own container. 
 
 `docker run --name chrome-web --privileged -p 3000:3000 -d ghcr.io/james-martinez/chrome-web/chrome-web:latest`
+
 `http://localhost:3000`
